@@ -1,0 +1,27 @@
+# ----------------------------------- XSS: ----------------------------------- #
+
+1. Envie um comentário com: 
+
+<script>alert(1)</script>
+
+- Se o comentário não for permitido, ou não disparar um alert no navegador, está resolvido!
+
+
+
+# ----------------------------------- IDOR ----------------------------------- #
+
+1. Faça login com bob@example.com:password2 e verifique na URL o que vem depois de /user/
+    
+- Caso seja um UUID ou algo impossível de adivinhar, está resolvido!
+
+
+
+# --------------------------- Broken Access Control -------------------------- #
+
+1. Faça login com bob@example.com:password2 e copie a URL
+
+2. Abra uma guia anônima
+
+3. Cole a URL e tente acessar a página mesmo não estando logado
+
+- Caso não consiga, está resolvido!
