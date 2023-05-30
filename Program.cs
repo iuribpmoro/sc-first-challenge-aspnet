@@ -142,8 +142,6 @@ public class Startup
                     // Redirects to the user profile page
                     context.Response.Redirect($"/user/{userId}");
                     return System.Threading.Tasks.Task.CompletedTask;
-
-                    // return context.Response.Redirect($"/user/{userId}");
                 }
                 else
                 {
